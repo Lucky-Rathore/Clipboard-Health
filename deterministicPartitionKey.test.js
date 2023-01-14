@@ -9,5 +9,5 @@ test('if partition key is a string', () => {  expect(deterministicPartitionKey({
 test('if partition key is a integer', () => {  expect(deterministicPartitionKey({"partitionKey": 1007 })).toBe("1007");
 });
 
-test('if partition key is a integer', () => {  expect(deterministicPartitionKey({"partitionKey": 1007 })).toBe("1007");
+test('if event is null', () => {  expect(deterministicPartitionKey(null)).toBe("0");
 });
